@@ -1,0 +1,2 @@
+#include "frmNuevoOperario.h"
+

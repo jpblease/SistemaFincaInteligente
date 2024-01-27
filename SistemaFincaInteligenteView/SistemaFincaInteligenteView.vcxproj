@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>SistemaFincaInteligenteView</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="frmCarritoGuia.cpp" />
+    <ClCompile Include="frmControlCasaPrincipal.cpp" />
+    <ClCompile Include="frmControlGranero.cpp" />
+    <ClCompile Include="frmControlPuertaPrincipal.cpp" />
+    <ClCompile Include="frmEditarArea.cpp" />
+    <ClCompile Include="frmEditarCopropietario.cpp" />
+    <ClCompile Include="frmEditarOperario.cpp" />
+    <ClCompile Include="frmMantCopropietario.cpp" />
+    <ClCompile Include="frmMantenimientoAreas.cpp" />
+    <ClCompile Include="frmMantenimientoOperario.cpp" />
+    <ClCompile Include="frmMenuCopropietario.cpp" />
+    <ClCompile Include="frmMenuOperario.cpp" />
+    <ClCompile Include="frmMenuPropietario.cpp" />
+    <ClCompile Include="frmMostrarDetalles.cpp" />
+    <ClCompile Include="frmNuevaArea.cpp" />
+    <ClCompile Include="frmNuevoCopropietario.cpp" />
+    <ClCompile Include="frmNuevoFamiliar.cpp" />
+    <ClCompile Include="frmNuevoOperario.cpp" />
+    <ClCompile Include="frmPanelControlLuzCasaPrincipal.cpp" />
+    <ClCompile Include="frmPanelLuzControlCasaPrincipal.cpp" />
+    <ClCompile Include="frmPanelPuertasControlCasaPrincipal.cpp" />
+    <ClCompile Include="frmPantallaInicio.cpp" />
+    <ClCompile Include="frmPantallaInicioOperario.cpp" />
+    <ClCompile Include="frmPricipal.cpp" />
+    <ClCompile Include="frmPuertaPrincipalOperario.cpp" />
+    <ClCompile Include="frmPuertPrincipal.cpp" />
+    <ClCompile Include="frmRecuperarContrasena.cpp" />
+    <ClCompile Include="frmReporteCasaPrincipal.cpp" />
+    <ClCompile Include="frmReporteDispositivos.cpp" />
+    <ClCompile Include="frmReporteGraneroGrafica.cpp" />
+    <ClCompile Include="frmReporteLuzPuertaPrincipal.cpp" />
+    <ClCompile Include="frmReportePuertaPrincipal.cpp" />
+    <ClCompile Include="frmSeguridad.cpp" />
+    <ClCompile Include="frmSeguridadCopropietario.cpp" />
+    <ClCompile Include="frmSeguridadOperario.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frmCarritoGuia.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmControlCasaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmControlGranero.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmControlPuertaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarArea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarCopropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmEditarOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantCopropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantenimientoAreas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantenimientoOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMenuCopropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMenuOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMenuPropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMostrarDetalles.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevaArea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoCopropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoFamiliar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNuevoOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPanelControlLuzCasaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPanelLuzControlCasaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPanelPuertasControlCasaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPantallaInicio.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPantallaInicioOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmPuertaPrincipalOperario.h" />
+    <ClInclude Include="frmPuertPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRecuperarContrasena.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteCasaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteDispositivos.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteGraneroGrafica.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReporteLuzPuertaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmReportePuertaPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmSeguridad.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmSeguridadCopropietario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmSeguridadOperario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCarritoGuia.resx">
+      <DependentUpon>frmCarritoGuia.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlCasaPrincipal.resx">
+      <DependentUpon>frmControlCasaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlGranero.resx">
+      <DependentUpon>frmControlGranero.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlPuertaPrincipal.resx">
+      <DependentUpon>frmControlPuertaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarArea.resx">
+      <DependentUpon>frmEditarArea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarCopropietario.resx">
+      <DependentUpon>frmEditarCopropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarOperario.resx">
+      <DependentUpon>frmEditarOperario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantCopropietario.resx">
+      <DependentUpon>frmMantCopropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoAreas.resx">
+      <DependentUpon>frmMantenimientoAreas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoOperario.resx">
+      <DependentUpon>frmMantenimientoOperario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuCopropietario.resx">
+      <DependentUpon>frmMenuCopropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuOperario.resx">
+      <DependentUpon>frmMenuOperario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPropietario.resx">
+      <DependentUpon>frmMenuPropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarDetalles.resx">
+      <DependentUpon>frmMostrarDetalles.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaArea.resx">
+      <DependentUpon>frmNuevaArea.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoCopropietario.resx">
+      <DependentUpon>frmNuevoCopropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoFamiliar.resx">
+      <DependentUpon>frmNuevoFamiliar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoOperario.resx">
+      <DependentUpon>frmNuevoOperario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanelControlLuzCasaPrincipal.resx">
+      <DependentUpon>frmPanelControlLuzCasaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanelLuzControlCasaPrincipal.resx">
+      <DependentUpon>frmPanelLuzControlCasaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPanelPuertasControlCasaPrincipal.resx">
+      <DependentUpon>frmPanelPuertasControlCasaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPantallaInicio.resx">
+      <DependentUpon>frmPantallaInicio.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPantallaInicioOperario.resx">
+      <DependentUpon>frmPantallaInicioOperario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPuertPrincipal.resx">
+      <DependentUpon>frmPuertPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperarContrasena.resx">
+      <DependentUpon>frmRecuperarContrasena.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteCasaPrincipal.resx">
+      <DependentUpon>frmReporteCasaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteDispositivos.resx">
+      <DependentUpon>frmReporteDispositivos.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteGraneroGrafica.resx">
+      <DependentUpon>frmReporteGraneroGrafica.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteLuzPuertaPrincipal.resx">
+      <DependentUpon>frmReporteLuzPuertaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportePuertaPrincipal.resx">
+      <DependentUpon>frmReportePuertaPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridad.resx">
+      <DependentUpon>frmSeguridad.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadCopropietario.resx">
+      <DependentUpon>frmSeguridadCopropietario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeguridadOperario.resx">
+      <DependentUpon>frmSeguridadOperario.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaFincaInteligenteController\SistemaFincaInteligenteController.vcxproj">
+      <Project>{f63dd2d0-2492-4b51-af11-15ab7f8a8614}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SistemaFincaInteligenteModel\SistemaFincaInteligenteModel.vcxproj">
+      <Project>{98d091f7-5c32-4957-b7ad-b324ea3424b9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

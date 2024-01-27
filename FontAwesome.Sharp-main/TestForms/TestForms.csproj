@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <SolutionDir Condition="'$(SolutionDir)' == ''">..\</SolutionDir>
+    </PropertyGroup>
+    <Import Project="$(SolutionDir)\solution.targets" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <IsPackable>false</IsPackable>
+        <StartupObject>TestForms.Program</StartupObject>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\FontAwesome.Sharp.Material\FontAwesome.Sharp.Material.csproj" />
+    </ItemGroup>
+</Project>

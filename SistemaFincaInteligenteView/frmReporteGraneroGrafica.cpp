@@ -1,0 +1,2 @@
+#include "frmReporteGraneroGrafica.h"
+

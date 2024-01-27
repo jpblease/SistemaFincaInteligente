@@ -1,0 +1,18 @@
+<SolutionConfiguration>
+  <Settings>
+    <AdditionalFilesToIncludeForSolution>
+      <Value>global.json</Value>
+    </AdditionalFilesToIncludeForSolution>
+    <AllowParallelTestExecution>False</AllowParallelTestExecution>
+    <!--<InstrumentationMode>Legacy</InstrumentationMode>-->
+    <CustomBuildProperties>
+      <Value>TargetFramework = net6.0-windows</Value>
+    </CustomBuildProperties>
+    <MetricsExclusionList>
+      <Value>TestForms\TestForms.csproj</Value>
+      <Value>TestWpf\TestWpf.csproj</Value>
+      <Value>FontEnumGenerator\FontEnumGenerator.csproj</Value>
+    </MetricsExclusionList>
+    <SolutionConfigured>True</SolutionConfigured>
+  </Settings>
+</SolutionConfiguration>

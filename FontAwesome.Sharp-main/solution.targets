@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <DebugType>full</DebugType>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <NoWarn>CS1616</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!-- https://docs.microsoft.com/en-us/dotnet/core/tools/csproj#nuget-metadata-properties -->
+        <Authors>Awesome Incremented and Contributors</Authors>
+        <Company>Awesome Incremented</Company>
+        <Product Condition="'$(Product)' == ''">$(AssemblyName)</Product>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Copyright>Copyright © Awesome Incremented 2015-2022</Copyright>
+        <Description>A library for embbeding Font Awesome icons in WPF &amp; Windows Forms applications</Description>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <!-- See GitHub project tags -->
+        <PackageTags>fontawesome;icon;material-design;dotnet-core;wpf;windows-forms</PackageTags>
+        <RepositoryUrl>https://github.com/awesome-inc/FontAwesome.Sharp</RepositoryUrl>
+
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>$(SolutionDir)\key.snk</AssemblyOriginatorKeyFile>
+    </PropertyGroup>
+
+
+    <!-- Need to conditionally bring in references for .NET Framework, cf.:
+     - https://docs.microsoft.com/en-us/dotnet/core/tutorials/libraries#how-to-multitarget
+    -->
+    <ItemGroup Condition="$(TargetFramework.StartsWith('net4'))">
+        <!-- WPF -->
+        <Reference Include="System.Xaml" />
+        <Reference Include="WindowsBase" />
+        <Reference Include="PresentationCore" />
+        <Reference Include="PresentationFramework" />
+        <!-- Windows Forms -->
+        <Reference Include="System.Windows.Forms" />
+    </ItemGroup>
+</Project>

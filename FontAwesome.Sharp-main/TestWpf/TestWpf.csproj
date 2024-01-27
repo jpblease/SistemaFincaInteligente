@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <SolutionDir Condition="'$(SolutionDir)' == ''">..\</SolutionDir>
+    </PropertyGroup>
+    <Import Project="$(SolutionDir)\solution.targets" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <OutputType>WinExe</OutputType>
+        <UseWpf>true</UseWpf>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\FontAwesome.Sharp.Material\FontAwesome.Sharp.Material.csproj" />
+        <ProjectReference Include="..\FontAwesome.Sharp.Pro\FontAwesome.Sharp.Pro.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <!-- Include pro fonts (git-ignore) -->
+        <Resource Include="fonts\*.ttf" />
+    </ItemGroup>
+</Project>

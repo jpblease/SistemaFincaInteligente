@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <SolutionDir Condition="'$(SolutionDir)' == ''">..\</SolutionDir>
+        <Nullable>disable</Nullable> <!-- TODO: enable -->
+    </PropertyGroup>
+    <Import Project="$(SolutionDir)\solution.targets" />
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0-windows;net48;net472;netcoreapp3.1;</TargetFrameworks>
+        <UseWindowsForms>true</UseWindowsForms>
+        <UseWPF>true</UseWPF>
+        <RootNamespace>FontAwesome.Sharp</RootNamespace>
+        <AssemblyName>FontAwesome.Sharp</AssemblyName>
+        <!--<DefineConstants>$(TargetFramework.ToUpperInvariant())</DefineConstants>-->
+        <!-- For unsafe windows forms code -->
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Resource Include="fonts\*.ttf" />
+    </ItemGroup>
+</Project>

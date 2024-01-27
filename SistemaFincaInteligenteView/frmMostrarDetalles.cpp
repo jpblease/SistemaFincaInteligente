@@ -1,0 +1,2 @@
+#include "frmMostrarDetalles.h"
+

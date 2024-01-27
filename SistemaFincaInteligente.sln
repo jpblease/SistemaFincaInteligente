@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SistemaFincaInteligenteModel", "SistemaFincaInteligenteModel\SistemaFincaInteligenteModel.vcxproj", "{98D091F7-5C32-4957-B7AD-B324EA3424B9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SistemaFincaInteligenteController", "SistemaFincaInteligenteController\SistemaFincaInteligenteController.vcxproj", "{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SistemaFincaInteligenteView", "SistemaFincaInteligenteView\SistemaFincaInteligenteView.vcxproj", "{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Debug|x64.ActiveCfg = Debug|x64
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Debug|x64.Build.0 = Debug|x64
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Debug|x86.Build.0 = Debug|Win32
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Release|x64.ActiveCfg = Release|x64
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Release|x64.Build.0 = Release|x64
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Release|x86.ActiveCfg = Release|Win32
+		{98D091F7-5C32-4957-B7AD-B324EA3424B9}.Release|x86.Build.0 = Release|Win32
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Debug|x64.ActiveCfg = Debug|x64
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Debug|x64.Build.0 = Debug|x64
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Debug|x86.ActiveCfg = Debug|Win32
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Debug|x86.Build.0 = Debug|Win32
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Release|x64.ActiveCfg = Release|x64
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Release|x64.Build.0 = Release|x64
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Release|x86.ActiveCfg = Release|Win32
+		{F63DD2D0-2492-4B51-AF11-15AB7F8A8614}.Release|x86.Build.0 = Release|Win32
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Debug|x64.ActiveCfg = Debug|x64
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Debug|x64.Build.0 = Debug|x64
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Debug|x86.ActiveCfg = Debug|Win32
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Debug|x86.Build.0 = Debug|Win32
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Release|x64.ActiveCfg = Release|x64
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Release|x64.Build.0 = Release|x64
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Release|x86.ActiveCfg = Release|Win32
+		{F4A6F981-D7A6-41C9-AFD6-DC51D0D672C5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CF620F4-0709-488F-AA1C-DD8F7FD72EE8}
+	EndGlobalSection
+EndGlobal
